@@ -36,7 +36,7 @@ int main()
     else
     {
         printf("quicksort\n");
-        quickSort(array, 0, ARRAY_LENGTH-1);
+        quickSort(array, 0, ARRAY_LENGTH-1, 0, ARRAY_LENGTH);
     }
 
     printArray(array);

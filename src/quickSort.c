@@ -22,15 +22,21 @@ int partition(int array[], int low, int high)
     }
     swap(array, lowerElem+1, high);
     return lowerElem+1;
-
 }
 
-void quickSort(int array[], int low, int high)
+void quickSort(int array[], int low, int high, int count, int size)
 {
     if(low < high)
     {
-        int pivot = partition(array, low, high);
-        quickSort(array, low, pivot-1);
-        quickSort(array, pivot+1, high);
+        if(count <= K*log2(size))
+        {
+            int pivot = partition(array, low, high);
+            quickSort(array, low, pivot-1, count+1, size);
+            quickSort(array, pivot+1, high, count+1, size);
+        }
+        else if(count > K*log2(size))
+        {
+            heapSort(array, size-1);
+        }
     }
 }

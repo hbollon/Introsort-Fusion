@@ -30,3 +30,5 @@
 
 # Debug files
 *.dSYM/
+introsort_workspace.code-workspace
+.vscode/c_cpp_properties.json

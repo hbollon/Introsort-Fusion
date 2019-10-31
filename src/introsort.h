@@ -18,8 +18,13 @@ void printArray(ListeTri array);
 /* quicksort.c */
 void swap(int array[], int firstIndex, int secondIndex);
 int partition(int array[], int low, int high);
-void quickSort(int array[], int low, int high);
+void quickSort(int array[], int low, int high, int count, int size);
 
 /* insertsort.c */
 void insertSort(int array[], int size);
+
+/* heapsort.c */ 
+void heapify(ListeTri array, int index, int size);
+void heapSort(ListeTri array, int size);
+
 
