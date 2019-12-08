@@ -5,8 +5,9 @@
 
 #define K 2
 #define S 16
-#define ARRAY_LENGTH 32
+#define ARRAY_LENGTH 18
 #define RANDMIN 0
+#define RANDMINNEG -1200
 #define RANDMAX 1200
 
 typedef int ListeTri[ARRAY_LENGTH];
